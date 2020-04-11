@@ -1,0 +1,11 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "A GraphQL endpoint for aggregated COVID-19 data",
+  "main": "index.js",
+  "author": "Lucas Shadler",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
