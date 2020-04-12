@@ -16,9 +16,9 @@
   },
   "devDependencies": {
     "covid-19": "cssegisanddata/covid-19#master",
-    "glob": "^7.1.6",
-    "papaparse": "^5.2.0",
-    "pkg-dir": "^4.2.0"
+    "glob": "7.1.6",
+    "papaparse": "5.2.0",
+    "pkg-dir": "4.2.0"
   },
   "scripts": {
     "data": "node src/scripts/parse-data.js"
