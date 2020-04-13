@@ -97,14 +97,18 @@ const RandomNumbers = () => {
 
 
   return (
-    <Box display="flex" flexDirection="column">
-      <Typography>This website generates a unique set of numbers within a given range.</Typography>
+    <Box display="flex" flexDirection="column" mx={1}>
+      <Typography variant="h3" color="primary">Generate a unique set of numbers for given range and seed</Typography>
       <TextField placeholder={seed} onChange={(e) => setSeed(e.target.value)} label="Seed" type="number" />
       <TextField placeholder={num} onChange={(e) => setNum(e.target.value)} label="Number of unique values" type="number" />
       <TextField placeholder={min} onChange={(e) => setMin(e.target.value)} label="Minimum value" type="number" />
       <TextField placeholder={max} onChange={(e) => setMax(e.target.value)} label="Maximum value" type="number" />
-      <Button onClick={onSubmit}>Generate List</Button>
-      <Button onClick={copyNumbers}>Copy Numbers</Button>
+      <Box my={1} width="100%">
+        <Button color="primary" variant="contained" width="100%" onClick={onSubmit}>Generate List</Button>
+      </Box>
+      <Box my={1} width="100%">
+        <Button color="primary" variant="contained" onClick={copyNumbers}>Copy Numbers</Button>
+      </Box>
       <TextareaAutosize id="numbers" value={error || randomNums.join(',\n')} />
       <Snackbar
         anchorOrigin={{
