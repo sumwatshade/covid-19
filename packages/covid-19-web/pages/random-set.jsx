@@ -100,9 +100,9 @@ const RandomNumbers = () => {
     <Box display="flex" flexDirection="column" mx={1}>
       <Typography variant="h3" color="primary">Generate a unique set of numbers for given range and seed</Typography>
       <TextField placeholder={seed} onChange={(e) => setSeed(e.target.value)} label="Seed" type="number" />
-      <TextField placeholder={num} onChange={(e) => setNum(e.target.value)} label="Number of unique values" type="number" />
-      <TextField placeholder={min} onChange={(e) => setMin(e.target.value)} label="Minimum value" type="number" />
-      <TextField placeholder={max} onChange={(e) => setMax(e.target.value)} label="Maximum value" type="number" />
+      <TextField placeholder={num} onChange={(e) => setNum(parseInt(e.target.value, 10))} label="Number of unique values" type="number" />
+      <TextField placeholder={min} onChange={(e) => setMin(parseInt(e.target.value, 10))} label="Minimum value" type="number" />
+      <TextField placeholder={max} onChange={(e) => setMax(parseInt(e.target.value, 10))} label="Maximum value" type="number" />
       <Box my={1} width="100%">
         <Button color="primary" variant="contained" width="100%" onClick={onSubmit}>Generate List</Button>
       </Box>
