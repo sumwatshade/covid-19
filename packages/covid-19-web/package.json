@@ -10,7 +10,7 @@
   "dependencies": {
     "@material-ui/core": "4.9.10",
     "@material-ui/icons": "4.9.1",
-    "marked": "0.8.2",
+    "marked": "1.2.8",
     "next": "9.3.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
