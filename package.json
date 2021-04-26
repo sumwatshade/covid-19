@@ -21,7 +21,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "husky": "4.2.5",
+    "husky": "6.0.0",
     "lint-staged": "10.1.3"
   }
 }
