@@ -17,7 +17,7 @@
   "devDependencies": {
     "covid-19": "cssegisanddata/covid-19#master",
     "glob": "7.1.6",
-    "papaparse": "5.2.0",
+    "papaparse": "5.4.1",
     "pkg-dir": "4.2.0"
   },
   "scripts": {
